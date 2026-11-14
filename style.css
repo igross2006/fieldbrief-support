@@ -1,0 +1,14 @@
+:root { color-scheme: light dark; --paper: #f6f2e8; --ink: #192f3c; --line: #cecabc; --accent: #944020; }
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #101f2b; --ink: #f0eade; --line: #40505b; --accent: #ffb494; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1.05rem/1.55 system-ui, sans-serif; }
+main { max-width: 44rem; margin: auto; padding: 2rem 1.25rem 3rem; }
+header { display: flex; align-items: center; gap: .85rem; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+header img { border-radius: 12px; }
+h1, h2 { line-height: 1.15; }
+h1 { margin: 2rem 0 1rem; font-size: clamp(2.2rem, 8vw, 3.4rem); }
+h2 { margin-top: 2rem; font-size: 1.35rem; }
+a { color: var(--accent); text-underline-offset: .14em; }
+footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
